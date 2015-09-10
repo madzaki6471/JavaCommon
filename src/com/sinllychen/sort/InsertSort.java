@@ -1,5 +1,4 @@
 package com.sinllychen.sort;
-import java.util.ArrayList;
 /**
  * 插入排序
  * @author sinllychen
@@ -23,5 +22,13 @@ public class InsertSort {
     		}
     		datas[i+1]= key;
     	}
+    }
+    
+    public static void main(String[] args)
+    {
+    	long[] data={4,6,2,1,6,8,9,8};
+    	insertSort(data);
+    	for(int i=0;i<data.length;i++)
+    		System.out.print(data[i]+" ");
     }
 }
